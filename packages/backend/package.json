@@ -1,0 +1,25 @@
+{
+  "name": "backend",
+  "version": "1.0.50",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "bun run --watch src/index.ts",
+    "m:dev": "rm -rf database.db && drizzle-kit migrate && nr dev"
+  },
+  "dependencies": {
+    "@elysiajs/cors": "^1.1.1",
+    "@libsql/client": "^0.14.0",
+    "dotenv": "^16.4.7",
+    "drizzle-orm": "^0.37.0",
+    "drizzle-typebox": "^0.1.1",
+    "elysia": "latest",
+    "react-scan": "file:/Users/robby/react-scan/packages/scan/react-scan-0.0.180.tgz"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.1.14",
+    "bun-types": "latest",
+    "drizzle-kit": "^0.29.1",
+    "tsx": "^4.19.2"
+  },
+  "module": "src/index.js"
+}
